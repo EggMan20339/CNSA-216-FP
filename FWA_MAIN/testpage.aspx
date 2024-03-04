@@ -11,7 +11,7 @@
     <title>testoage</title>
 </head>
 <body>
-<form id="testpage" runat="server">
+<form id="somethingelse" runat="server">
     <div>
         <h1>THIS IS TESTPAGE</h1>
     </div>
