@@ -148,6 +148,7 @@
         <Content Include="fonts\glyphicons-halflings-regular.svg"/>
         <Content Include="Global.asax"/>
         <Content Include="Content\Site.css"/>
+        <Content Include="main.css" />
         <Content Include="main.master" />
         <Content Include="patient.aspx" />
         <Content Include="patNew.aspx" />
