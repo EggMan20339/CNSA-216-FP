@@ -3,7 +3,7 @@ using System.Web.UI;
 
 namespace FWA_MAIN
 {
-    public partial class mastertest : Page
+    public partial class patient : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
