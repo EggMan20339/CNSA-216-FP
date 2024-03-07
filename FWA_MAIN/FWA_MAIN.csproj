@@ -123,6 +123,9 @@
           <SubType>ASPXCodeBehind</SubType>
           <DependentUpon>main.master</DependentUpon>
         </Compile>
+        <Compile Include="main.master.designer.cs">
+          <DependentUpon>main.master</DependentUpon>
+        </Compile>
         <Compile Include="patient.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
           <DependentUpon>patient.aspx</DependentUpon>
