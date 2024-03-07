@@ -119,10 +119,6 @@
         <Compile Include="Global.asax.cs">
             <DependentUpon>Global.asax</DependentUpon>
         </Compile>
-        <Compile Include="MasterPage.aspx.cs">
-          <SubType>ASPXCodeBehind</SubType>
-          <DependentUpon>MasterPage.aspx</DependentUpon>
-        </Compile>
         <Compile Include="mastertest.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
           <DependentUpon>mastertest.aspx</DependentUpon>
@@ -142,7 +138,6 @@
         <Content Include="fonts\glyphicons-halflings-regular.svg"/>
         <Content Include="Global.asax"/>
         <Content Include="Content\Site.css"/>
-        <Content Include="MasterPage.aspx" />
         <Content Include="masterpage.master" />
         <Content Include="mastertest.aspx" />
         <Content Include="Scripts\bootstrap.js"/>
