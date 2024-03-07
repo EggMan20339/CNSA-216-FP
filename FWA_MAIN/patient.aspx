@@ -4,7 +4,7 @@
     
     
     <h1 style="text-align: center;"> 
-            Welcome to GeeksforGeeks. 
+            Welcome to Pharmacy. 
         </h1> 
         <h1 style="text-align: center;"> 
             Hi, We are creating a  
@@ -22,13 +22,9 @@
     <div id="contextMenu" class="context-menu" 
         style="display: none"> 
         <ul> 
-            <li><a href="#">Element-1</a></li> 
-            <li><a href="#">Element-2</a></li> 
-            <li><a href="#">Element-3</a></li> 
-            <li><a href="#">Element-4</a></li> 
-            <li><a href="#">Element-5</a></li> 
-            <li><a href="#">Element-6</a></li> 
-            <li><a href="#">Element-7</a></li> 
+            <li><a href="patNew.aspx">New</a></li> 
+            <li><a href="#">Edit</a></li> 
+            <li><a href="#">Delete</a></li> 
         </ul> 
     </div> 
     <script> 
