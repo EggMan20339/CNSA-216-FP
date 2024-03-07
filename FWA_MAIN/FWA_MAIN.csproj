@@ -138,8 +138,16 @@
           <SubType>ASPXCodeBehind</SubType>
           <DependentUpon>testpage.aspx</DependentUpon>
         </Compile>
+        <Compile Include="Welcome.aspx.cs">
+          <SubType>ASPXCodeBehind</SubType>
+          <DependentUpon>Welcome.aspx</DependentUpon>
+        </Compile>
+        <Compile Include="Welcome.aspx.designer.cs">
+          <DependentUpon>Welcome.aspx</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
+        <Content Include="cmutemplate.html" />
         <Content Include="Content\bootstrap-theme.css"/>
         <Content Include="Content\bootstrap-theme.min.css"/>
         <Content Include="Content\bootstrap.css"/>
@@ -154,6 +162,7 @@
         <Content Include="patNew.aspx" />
         <Content Include="Scripts\bootstrap.js"/>
         <Content Include="Scripts\bootstrap.min.js"/>
+        <Content Include="Welcome.aspx" />
         <None Include="Scripts\jquery-3.3.1.intellisense.js"/>
         <Content Include="Scripts\jquery-3.3.1.js"/>
         <Content Include="Scripts\jquery-3.3.1.min.js"/>
