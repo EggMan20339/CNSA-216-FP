@@ -1,16 +1,31 @@
 .sidenavdiv{
     
-    outline: solid 1px blue;
+    display: inline-block;
+    /*outline: solid 1px blue;*/
     width: 150px;
-    height: 1000px;
+    height: 800px;
+    top: 0;
+    left: 0;
     background-color: #1D2125;
+    vertical-align: top;
+    
+    transition: width 0.5s;
     
 }
-.slavediv{
+
+.sidenavbutton{
     
-    outline: solid 1px red;
+    background-color: #1D2125;
+    display: block;
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    color: white;
+    /*border: 2px solid #0056b3;*/
+    
     
 }
+
 .mainmaster{
     
   background-color: #282E33;
@@ -19,16 +34,16 @@
 .welcomepage{
     
     background-color: #1b6d85;
-
     outline: solid 1px red;
     
 }
 .standardcontentpage{
     
-    width: 700px;
-    height: 1000px;
-    outline: solid 1px red;
-    background-color: #0f0f0f;
+    width: 1200px;
+    height: 800px;
+    /*outline: solid 1px red;*/
+    background-color: #161A1D;
     display: inline-block;
     color: white;
+    vertical-align: top;
 }
