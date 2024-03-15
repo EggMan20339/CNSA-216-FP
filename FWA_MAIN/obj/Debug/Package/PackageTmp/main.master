@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" CodeBehind="main.aspx.cs" Inherits="FWA_MAIN.main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+
+
+<body class="mainmaster">
+
+<nav class="sidenavdiv">
+
+    <form  runat="server">
+        <div style="display: block; width: 8%">
+            <%-- test --%>
+            <asp:Button runat="server" ID="btnHome" CssClass="sidenavbutton" Text="Home" OnClick="home_OnClick" />
+            <br/>
+            <asp:Button runat="server" ID="btnPatient" CssClass="sidenavbutton" Text="Patients" OnClick="btnPatient_OnClick" />
+            <asp:Button runat="server" ID="btnPhysician" CssClass="sidenavbutton" Text="Physicians" OnClick="btnPhysician_OnClick"/>
+            <asp:Button runat="server" ID="btnMedication" CssClass="sidenavbutton" Text="Medications" OnClick="btnMedication_OnClick"/>
+            <asp:Button runat="server" ID="btnPrescription" CssClass="sidenavbutton" Text="Prescriptions" OnClick="btnPrescription_OnClick"/>
+        </div></form>
+    
+    
+</nav>
+
+
+
+    <div class="standardcontentpage">
+        <asp:ContentPlaceHolder id="cph1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+
+</body>
+</html>

@@ -141,12 +141,12 @@
           <SubType>ASPXCodeBehind</SubType>
           <DependentUpon>testpage.aspx</DependentUpon>
         </Compile>
-        <Compile Include="Welcome.aspx.cs">
+        <Compile Include="Default.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
-          <DependentUpon>Welcome.aspx</DependentUpon>
+          <DependentUpon>Default.aspx</DependentUpon>
         </Compile>
-        <Compile Include="Welcome.aspx.designer.cs">
-          <DependentUpon>Welcome.aspx</DependentUpon>
+        <Compile Include="Default.aspx.designer.cs">
+          <DependentUpon>Default.aspx</DependentUpon>
         </Compile>
     </ItemGroup>
     <ItemGroup>
@@ -165,7 +165,7 @@
         <Content Include="patNew.aspx" />
         <Content Include="Scripts\bootstrap.js"/>
         <Content Include="Scripts\bootstrap.min.js"/>
-        <Content Include="Welcome.aspx" />
+        <Content Include="Default.aspx" />
         <None Include="Scripts\jquery-3.3.1.intellisense.js"/>
         <Content Include="Scripts\jquery-3.3.1.js"/>
         <Content Include="Scripts\jquery-3.3.1.min.js"/>

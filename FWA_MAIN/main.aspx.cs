@@ -32,7 +32,7 @@ namespace FWA_MAIN
         protected void home_OnClick(object sender, EventArgs e)
         {
             
-            Response.Redirect("Welcome.aspx");
+            Response.Redirect("Default.aspx");
             
             
         }
