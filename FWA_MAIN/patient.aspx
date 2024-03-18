@@ -22,9 +22,11 @@
     <div id="contextMenu" class="context-menu" 
         style="display: none"> 
         <ul> 
-            <li><a href="patNew.aspx">New</a></li> 
-            <li><a href="#">Edit</a></li> 
-            <li><a href="#">Delete</a></li> 
+            <li><a href="patNew.aspx">New</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Delete</a></li>
+            
+            <%-- <asp:Button runat="server" Text="New" OnClick="btnNew_OnClick" /> --%>
         </ul> 
     </div> 
     <script> 

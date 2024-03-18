@@ -9,5 +9,12 @@ namespace FWA_MAIN
         {
 
         }
+
+        protected void btnNew_OnClick(object sender, EventArgs e)
+        {
+            
+            Response.Redirect("patNew.aspx");
+            
+        }
     }
 }
