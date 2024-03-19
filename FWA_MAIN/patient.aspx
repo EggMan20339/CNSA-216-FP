@@ -1,16 +1,32 @@
 ﻿<%@ Page Title="Patients" Language="C#" MasterPageFile="main.master" CodeBehind="patient.aspx.cs" Inherits="FWA_MAIN.patient" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="cph1">
-    
-    
-    <h1 style="text-align: center;"> 
-            Welcome to Pharmacy. 
-        </h1> 
-        <h1 style="text-align: center;"> 
-            Hi, We are creating a  
-            custom context menu here. 
-        </h1> 
-        <script type="text/javascript"> 
+
+    <link type="text/css" href="main.css"/>
+
+    <h1 style="text-align: center; font-size: 44px">
+       Patients
+    </h1>
+<div class="patDiv" style="justify-content: center">
+    <div class="patDiv" style="width: 100px; margin-right: 5px">
+        <div class="indivPatDiv" style="text-align: right;"><label for="txtFNAME" class="buttonLabel" >First Name: </label></div>
+        <br/>
+        <div class="indivPatDiv" style="text-align: right;"><label for="txtLNAME" class="buttonLabel" >Last Name: </label></div>
+        <br/>
+        <div class="indivPatDiv" style="text-align: right;"><label for="txtPatID" class="buttonLabel" >Patient ID: </label></div>
+        <br/>
+    </div>
+
+    <div class="patDiv" style="width: 400px">
+        <div class="indivPatDiv" ><asp:TextBox runat="server" id="txtFNAME"></asp:TextBox></div>
+        <br/>
+        <div class="indivPatDiv" ><asp:TextBox runat="server" id="txtLNAME"></asp:TextBox></div>
+        <br/>
+        <div class="indivPatDiv" ><asp:TextBox runat="server" id="txtPatID"></asp:TextBox></div>
+        <br/>
+    </div>
+    </div>
+    <script type="text/javascript"> 
             document.oncontextmenu = rightClick; 
       
             function rightClick(clickEvent) { 
@@ -18,17 +34,23 @@
                 // return false; 
             } 
         </script>
-    
-    <div id="contextMenu" class="context-menu" 
-        style="display: none"> 
-        <ul> 
-            <li><a href="patNew.aspx">New</a></li>
-            <li><a href="#">Edit</a></li>
-            <li><a href="#">Delete</a></li>
-            
+
+    <div id="contextMenu" class="context-menu"
+         style="display: none">
+        <ul>
+            <li>
+                <a href="patNew.aspx">New</a>
+            </li>
+            <li>
+                <a href="#">Edit</a>
+            </li>
+            <li>
+                <a href="#">Delete</a>
+            </li>
+
             <%-- <asp:Button runat="server" Text="New" OnClick="btnNew_OnClick" /> --%>
-        </ul> 
-    </div> 
+        </ul>
+    </div>
     <script> 
         document.onclick = hideMenu; 
         document.oncontextmenu = rightClick; 
@@ -38,6 +60,7 @@
                     .style.display = "none" 
         } 
       
+        
         function rightClick(e) { 
             e.preventDefault(); 
       
@@ -51,7 +74,7 @@
                 menu.style.top = e.pageY + "px"; 
             } 
         } 
-    </script> 
+    </script>
     <style type="text/css"> 
         .context-menu { 
             position: absolute; 
@@ -81,6 +104,6 @@
         .context-menu ul li:hover { 
             background: darkgray; 
         } 
-    </style> 
-    
+    </style>
+
 </asp:Content>

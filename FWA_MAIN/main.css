@@ -13,6 +13,27 @@
     
 }
 
+.buttonLabel{
+    
+    text-align: right;
+    
+}
+
+.indivPatDiv{
+    
+    height: 25px;
+    outline: solid 1px red;
+
+    
+}
+
+.patDiv{
+    vertical-align: top;
+    outline: solid 1px red;
+    display: inline-block;
+    
+}
+
 .sidenavbutton{
     
     background-color: #1D2125;
