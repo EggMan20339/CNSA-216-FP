@@ -1,10 +1,10 @@
-﻿<%@ Page Title="New Patient" Language="C#" MasterPageFile="main.master" CodeBehind="patNew.aspx.cs" Inherits="FWA_MAIN.patNew" %>
+﻿<%@ Page Title="Edit Patient" Language="C#" MasterPageFile="main.master" CodeBehind="patEdit.aspx.cs" Inherits="FWA_MAIN.patEdit" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="cph1">
     
     <link type="text/css" href="main.css"/>
     
-    <h1 style="text-align: center; font-size: 44px">New Patient</h1>
+    <h1 style="text-align: center; font-size: 44px">Edit Patient</h1>
     <div class="patDiv">
     <div class="patDiv">
         <div class="patDiv" style="padding-left: 150px; padding-right: 5px;width: 100px">
@@ -47,7 +47,7 @@
     </div>
     <br/>
     <div class="patDiv" style="margin-left: 500px">
-        <div style="margin-right: 10px; display: inline-block"><asp:Button runat="server" CssClass="standardbtn" ID="btnSavePat" Text="Create"/></div>
+        <div style="margin-right: 10px; display: inline-block"><asp:Button runat="server" CssClass="standardbtn" ID="btnSavePat" Text="Save"/></div>
         <div style="display: inline-block"><asp:Button runat="server" CssClass="standardbtn" ID="btnCancelPat" Text="Cancel" OnClick="btnCancelPat_OnClick"/></div>
     </div>
 </asp:Content>

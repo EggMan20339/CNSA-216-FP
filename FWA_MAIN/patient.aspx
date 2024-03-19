@@ -5,27 +5,45 @@
     <link type="text/css" href="main.css"/>
 
     <h1 style="text-align: center; font-size: 44px">
-       Patients
+        Patients
     </h1>
-<div class="patDiv" style="justify-content: center">
-    <div class="patDiv" style="width: 100px; margin-right: 5px">
-        <div class="indivPatDiv" style="text-align: right;"><label for="txtFNAME" class="buttonLabel" >First Name: </label></div>
-        <br/>
-        <div class="indivPatDiv" style="text-align: right;"><label for="txtLNAME" class="buttonLabel" >Last Name: </label></div>
-        <br/>
-        <div class="indivPatDiv" style="text-align: right;"><label for="txtPatID" class="buttonLabel" >Patient ID: </label></div>
-        <br/>
-    </div>
+    <div class="patDiv" style="padding-left: 400px">
+        <div class="patDiv" style="width: 100px; margin-right: 5px">
+            <div class="indivPatDiv" style="text-align: right;">
+                <label for="txtFNAME" class="buttonLabel">First Name: </label>
+            </div>
+            <br/>
+            <div class="indivPatDiv" style="text-align: right;">
+                <label for="txtLNAME" class="buttonLabel">Last Name: </label>
+            </div>
+            <br/>
+            <div class="indivPatDiv" style="text-align: right;">
+                <label for="txtPatID" class="buttonLabel">Patient ID: </label>
+            </div>
+            <br/>
+        </div>
 
-    <div class="patDiv" style="width: 400px">
-        <div class="indivPatDiv" ><asp:TextBox runat="server" id="txtFNAME"></asp:TextBox></div>
+        <div class="patDiv" style="width: 400px">
+            <div class="indivPatDiv">
+                <asp:TextBox runat="server" CssClass="defaultTXT" id="txtFNAME"></asp:TextBox>
+            </div>
+            <br/>
+            <div class="indivPatDiv">
+                <asp:TextBox runat="server" CssClass="defaultTXT" id="txtLNAME"></asp:TextBox>
+            </div>
+            <br/>
+            <div class="indivPatDiv">
+                <asp:TextBox runat="server" CssClass="defaultTXT" id="txtPatID"></asp:TextBox>
+            </div>
+            <br/>
+        </div>
         <br/>
-        <div class="indivPatDiv" ><asp:TextBox runat="server" id="txtLNAME"></asp:TextBox></div>
-        <br/>
-        <div class="indivPatDiv" ><asp:TextBox runat="server" id="txtPatID"></asp:TextBox></div>
-        <br/>
+        <asp:Button runat="server" ID="btnPatSearch" Text="Search" CssClass="btnPatSearch"/>
+        
     </div>
-    </div>
+    
+    <asp:GridView runat="server" ID="gvPatient" BorderColor="red"></asp:GridView>
+    
     <script type="text/javascript"> 
             document.oncontextmenu = rightClick; 
       
@@ -42,7 +60,7 @@
                 <a href="patNew.aspx">New</a>
             </li>
             <li>
-                <a href="#">Edit</a>
+                <a href="patEdit.aspx">Edit</a>
             </li>
             <li>
                 <a href="#">Delete</a>

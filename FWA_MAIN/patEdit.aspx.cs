@@ -3,7 +3,7 @@ using System.Web.UI;
 
 namespace FWA_MAIN
 {
-    public partial class patNew : Page
+    public partial class patEdit : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

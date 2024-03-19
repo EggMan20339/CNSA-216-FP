@@ -126,6 +126,13 @@
         <Compile Include="main.master.designer.cs">
           <DependentUpon>main.master</DependentUpon>
         </Compile>
+        <Compile Include="patEdit.aspx.cs">
+          <SubType>ASPXCodeBehind</SubType>
+          <DependentUpon>patEdit.aspx</DependentUpon>
+        </Compile>
+        <Compile Include="patEdit.aspx.designer.cs">
+          <DependentUpon>patEdit.aspx</DependentUpon>
+        </Compile>
         <Compile Include="patient.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
           <DependentUpon>patient.aspx</DependentUpon>
@@ -161,6 +168,7 @@
         <Content Include="Content\Site.css"/>
         <Content Include="main.css" />
         <Content Include="main.master" />
+        <Content Include="patEdit.aspx" />
         <Content Include="patient.aspx" />
         <Content Include="patNew.aspx" />
         <Content Include="Scripts\bootstrap.js"/>
