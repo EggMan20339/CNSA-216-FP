@@ -72,6 +72,7 @@
             <asp:BoundField DataField="Gender" HeaderText="Gender" ItemStyle-Width="100px"/>
         </Columns>
     </asp:GridView>
+    <asp:DropDownList runat="server"/>
     
 
     <script type="text/javascript"> 
