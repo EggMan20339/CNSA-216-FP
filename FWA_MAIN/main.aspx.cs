@@ -40,7 +40,7 @@ namespace FWA_MAIN
         protected void btnPatient_OnClick(object sender, EventArgs e)
         {
             
-            Response.Redirect("patient.aspx");
+            Response.Redirect("PatSearch.aspx");
             
         }
 

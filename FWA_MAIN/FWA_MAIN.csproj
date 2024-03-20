@@ -126,28 +126,32 @@
         <Compile Include="main.master.designer.cs">
           <DependentUpon>main.master</DependentUpon>
         </Compile>
-        <Compile Include="patEdit.aspx.cs">
+        <Compile Include="MedSearch.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
-          <DependentUpon>patEdit.aspx</DependentUpon>
+          <DependentUpon>MedSearch.aspx</DependentUpon>
         </Compile>
-        <Compile Include="patEdit.aspx.designer.cs">
-          <DependentUpon>patEdit.aspx</DependentUpon>
+        <Compile Include="MedSearch.aspx.designer.cs">
+          <DependentUpon>MedSearch.aspx</DependentUpon>
         </Compile>
-        <Compile Include="patient.aspx.cs">
+        <Compile Include="PatEdit.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
-          <DependentUpon>patient.aspx</DependentUpon>
+          <DependentUpon>PatEdit.aspx</DependentUpon>
         </Compile>
-        <Compile Include="patient.aspx.designer.cs" />
-        <Compile Include="patNew.aspx.cs">
+        <Compile Include="PatEdit.aspx.designer.cs">
+          <DependentUpon>PatEdit.aspx</DependentUpon>
+        </Compile>
+        <Compile Include="PatSearch.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
-          <DependentUpon>patNew.aspx</DependentUpon>
+          <DependentUpon>PatSearch.aspx</DependentUpon>
         </Compile>
-        <Compile Include="patNew.aspx.designer.cs" />
+        <Compile Include="PatSearch.aspx.designer.cs" />
+        <Compile Include="PatNew.aspx.cs">
+          <SubType>ASPXCodeBehind</SubType>
+          <DependentUpon>PatNew.aspx</DependentUpon>
+        </Compile>
+        <Compile Include="PatNew.aspx.designer.cs" />
+        <Compile Include="PharmacyDataTier.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="testpage.aspx.cs">
-          <SubType>ASPXCodeBehind</SubType>
-          <DependentUpon>testpage.aspx</DependentUpon>
-        </Compile>
         <Compile Include="Default.aspx.cs">
           <SubType>ASPXCodeBehind</SubType>
           <DependentUpon>Default.aspx</DependentUpon>
@@ -168,9 +172,10 @@
         <Content Include="Content\Site.css"/>
         <Content Include="main.css" />
         <Content Include="main.master" />
-        <Content Include="patEdit.aspx" />
-        <Content Include="patient.aspx" />
-        <Content Include="patNew.aspx" />
+        <Content Include="MedSearch.aspx" />
+        <Content Include="PatEdit.aspx" />
+        <Content Include="PatSearch.aspx" />
+        <Content Include="PatNew.aspx" />
         <Content Include="Scripts\bootstrap.js"/>
         <Content Include="Scripts\bootstrap.min.js"/>
         <Content Include="Default.aspx" />
@@ -185,7 +190,6 @@
         <Content Include="Scripts\jquery.validate.unobtrusive.js"/>
         <Content Include="Scripts\jquery.validate.unobtrusive.min.js"/>
         <Content Include="Scripts\modernizr-2.8.3.js"/>
-        <Content Include="testpage.aspx" />
         <Content Include="Web.config"/>
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>

@@ -19,6 +19,14 @@
     vertical-align: center;
     
 }
+.selected-row {
+    background-color: #C0C0C0; /* or any color you prefer */
+    color: #FFFFFF;
+}
+.highlighted-row {
+    background-color: #C0C0C0; /* or any color you prefer */
+    color: #FFFFFF;
+}
 
 .btnPatSearch{
     

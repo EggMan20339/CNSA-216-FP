@@ -11,7 +11,7 @@ namespace FWA_MAIN
 {
 
 
-    public partial class patient
+    public partial class PatSearch
     {
 
         /// <summary>

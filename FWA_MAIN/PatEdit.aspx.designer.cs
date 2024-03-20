@@ -11,7 +11,7 @@ namespace FWA_MAIN
 {
 
 
-    public partial class patNew
+    public partial class PatEdit
     {
 
         /// <summary>

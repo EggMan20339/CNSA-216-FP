@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@sql.eggtech.net" uuid="de43fcc2-f12b-4e47-b7d9-eec427a1b7f9">
+    <data-source source="LOCAL" name="FinalProjectOfficialPharmacy@sql.eggtech.net" uuid="d865c10f-3999-4b4f-a49c-f857d25d922f">
       <driver-ref>sqlserver.jb</driver-ref>
       <synchronize>true</synchronize>
       <configured-by-url>true</configured-by-url>
       <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
-      <jdbc-url>Server=sql.eggtech.net</jdbc-url>
+      <jdbc-url>Server=sql.eggtech.net;Database=FinalProjectOfficialPharmacy;User Id=admin;Password=delirium-purveyor-overall-backboned-approval-amino;</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

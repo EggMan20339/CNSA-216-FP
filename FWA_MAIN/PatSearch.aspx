@@ -1,9 +1,28 @@
-﻿<%@ Page Title="Patients" Language="C#" MasterPageFile="main.master" CodeBehind="patient.aspx.cs" Inherits="FWA_MAIN.patient" %>
+﻿<%@ Page Title="Patients" Language="C#" MasterPageFile="main.master" CodeBehind="~/PatSearch.aspx.cs" Inherits="FWA_MAIN.PatSearch" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="cph1">
 
     <link type="text/css" href="main.css"/>
 
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var inputElements = document.getElementsByTagName('input');
+            for (var i = 0; i < inputElements.length; i++) {
+                var input = inputElements[i];
+                if (input.type === 'text') {
+                    input.addEventListener('keydown', function (event) {
+                        if (event.keyCode === 13) { // 13 is the Enter key
+                            event.preventDefault(); // Prevent the default action
+                            document.getElementById('<%= btnPatSearch.ClientID %>').click(); // Trigger button click
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+
+
+    
     <h1 style="text-align: center; font-size: 44px">
         Patients
     </h1>
@@ -38,12 +57,23 @@
             <br/>
         </div>
         <br/>
-        <asp:Button runat="server" ID="btnPatSearch" Text="Search" CssClass="btnPatSearch"/>
-        
+        <asp:Button runat="server" ID="btnPatSearch" Text="Search" CssClass="btnPatSearch" OnClick="btnPatSearch_OnClick" />
+
     </div>
+
+    <asp:GridView runat="server" ID="gvPatient" BorderColor="white" AutoGenerateColumns="False" OnSelectedIndexChanged="gvPatient_OnSelectedIndexChanged"
+                  OnRowDataBound="gvPatient_OnRowDataBound">
+        <Columns>
+            <asp:BoundField DataField="Patient_id" HeaderText="Patient ID" ItemStyle-Width="100px"/>
+            <asp:BoundField DataField="FirstName" HeaderText="First Name" ItemStyle-Width="100px"/>
+            <asp:BoundField DataField="LastName" HeaderText="Last Name" ItemStyle-Width="100px"/>
+            <asp:BoundField DataField="DOB" HeaderText="Date of Birth" ItemStyle-Width="100px"/>
+            <asp:BoundField DataField="PhoneNumber" HeaderText="Phone Number" ItemStyle-Width="100px"/>
+            <asp:BoundField DataField="Gender" HeaderText="Gender" ItemStyle-Width="100px"/>
+        </Columns>
+    </asp:GridView>
     
-    <asp:GridView runat="server" ID="gvPatient" BorderColor="red"></asp:GridView>
-    
+
     <script type="text/javascript"> 
             document.oncontextmenu = rightClick; 
       
@@ -123,5 +153,17 @@
             background: darkgray; 
         } 
     </style>
-
+<script type="text/javascript">
+    window.onload = function() {
+        var grid = document.getElementById("<%= gvPatient.ClientID %>");
+        var rows = grid.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; i++) {
+            rows[i].onclick = function() {
+                // Assuming the first cell in every row contains the unique ID
+                var id = this.cells[0].innerText;
+                __doPostBack('Select$', id);
+            };
+        }
+    };
+</script>
 </asp:Content>
